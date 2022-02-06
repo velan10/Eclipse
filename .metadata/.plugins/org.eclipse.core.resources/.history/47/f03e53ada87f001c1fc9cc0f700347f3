@@ -1,0 +1,7 @@
+package Selenium;
+
+public class Web {
+public static void main(String[] args) {
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Selenium_Onlne\\Driver\\chromedriver.exe")
+}
+}

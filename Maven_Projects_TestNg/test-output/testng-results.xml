@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20600" started-at="2022-01-06T13:16:23 PST" finished-at="2022-01-06T13:16:43 PST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20600" started-at="2022-01-06T13:16:23 PST" finished-at="2022-01-06T13:16:43 PST">
+      <class name="com.mproject.TestNg_Task">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.mproject.TestNg_Task@78e67e0a]" name="openBrowser" duration-ms="14556" started-at="2022-01-06T13:16:23 PST" finished-at="2022-01-06T13:16:37 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openfacebookpage()[pri:0, instance:com.mproject.TestNg_Task@78e67e0a]" name="openfacebookpage" duration-ms="3440" started-at="2022-01-06T13:16:37 PST" finished-at="2022-01-06T13:16:41 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openfacebookpage -->
+        <test-method status="PASS" signature="openfacebookpage()[pri:0, instance:com.mproject.TestNg_Task@78e67e0a]" name="openfacebookpage" duration-ms="783" started-at="2022-01-06T13:16:41 PST" finished-at="2022-01-06T13:16:42 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openfacebookpage -->
+        <test-method status="PASS" signature="openfacebookpage()[pri:0, instance:com.mproject.TestNg_Task@78e67e0a]" name="openfacebookpage" duration-ms="700" started-at="2022-01-06T13:16:42 PST" finished-at="2022-01-06T13:16:42 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openfacebookpage -->
+        <test-method status="PASS" signature="quitbrowser()[pri:0, instance:com.mproject.TestNg_Task@78e67e0a]" name="quitbrowser" duration-ms="1025" started-at="2022-01-06T13:16:42 PST" depends-on-methods="com.mproject.TestNg_Task.openfacebookpage" finished-at="2022-01-06T13:16:43 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+      </class> <!-- com.mproject.TestNg_Task -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

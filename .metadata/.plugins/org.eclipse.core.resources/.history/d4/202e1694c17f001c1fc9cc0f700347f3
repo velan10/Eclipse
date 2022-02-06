@@ -1,0 +1,93 @@
+package Selenium;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
+import org.seleniumhq.jetty9.util.component.FileDestroyable;
+
+public class Web {
+	public static void main(String[] args) throws Throwable {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Admin\\eclipse-workspace\\Selenium_Onlne\\Driver\\chromedriver.exe");
+		ChromeOptions ch = new ChromeOptions();
+		ch.addArguments("incognito");
+		WebDriver driver = new ChromeDriver(ch); // upcasting method
+		driver.manage().window().maximize();
+		//driver.get("https://www.facebook.com/");
+//WebDriver Methods :
+
+		/*
+		 * driver.get("https://www.facebook.com/"); String title = driver.getTitle();
+		 * System.out.println(title); String currentUrl = driver.getCurrentUrl();
+		 * System.out.println(currentUrl);
+		 * driver.navigate().to("https://www.youtube.com/"); driver.navigate().back();
+		 * driver.navigate().forward(); driver.navigate().refresh();
+		 * driver.get("https://www.facebook.com/");// mehod overloading
+		 * Thread.sleep(3000);
+		 */
+		// WebElements Methods:
+
+	/*	driver.get("https://www.facebook.com/");
+		WebElement name = driver.findElement(By.xpath("//input[@type='text']"));
+		name.sendKeys("velanvelli@gmail.com");
+		boolean tr = name.isEnabled();
+		System.out.println(tr);
+	*/
+	
+		//TakesScreenShot
+		/*	
+		 	TakesScreenshot tt = (TakesScreenshot) driver;
+		 
+		File scource = tt.getScreenshotAs(OutputType.FILE);
+	    File des = new File("C:\\Users\\Admin\\eclipse-workspace\\Selenium_Onlne\\Screenshot\\velansnap.png");
+	    FileUtils.copyFile(scource, des);
+	*/ 
+		// Dropdown
+		
+		/*
+		driver.get("https://www.facebook.com/");
+		driver.findElement(By.xpath("(//a[@role='button'])[2]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.name("firstname")).sendKeys("Velan");
+driver.findElement(By.name("lastname")).sendKeys("vicky");
+driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys("velan@gmail.com");
+driver.findElement(By.xpath("(//input[@type='password'])[2]")).sendKeys("Velan@1995");
+WebElement date = driver.findElement(By.id("day"));
+Select s = new Select(date);
+s.selectByIndex(4);
+List<WebElement> list = s.getOptions();
+for (WebElement webElement : list) {
+	String text = webElement.getText();
+	System.out.println(text);	
+}
+WebElement firstSelectedOption = s.getFirstSelectedOption();
+System.out.println(firstSelectedOption.getText());
+
+*/
+		//alert Method
+		
+
+		driver.get("http://testleaf.herokuapp.com/pages/Alert.html");
+		WebElement Aler = driver.findElement(By.xpath("//button[text()='Alert Box']"));		
+Aler.click();
+driver.switchTo().alert().accept();
+WebElement conform = driver.findElement(By.xpath("//button[text()='Confirm Box']"));		
+conform.click();
+driver.switchTo().alert().dismiss();
+WebElement Prompt Box = driver.findElement(By.xpath("//button[text()='Prompt Box']"));		
+
+
+//driver.quit();
+}
+}

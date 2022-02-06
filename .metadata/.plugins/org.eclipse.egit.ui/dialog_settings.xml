@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/velan10/Selenium_Class.git"/>
+		<item value="https://github.com/velan10/Selenium.git"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="velan10 &lt;velandg10@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="velan10 &lt;velandg10@gmail.com&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\Admin\git\Selenium_Class\.git">
+			<item value="false"/>
+			<item value="velan10 &lt;velandg10@gmail.com&gt;"/>
+			<item value="initial commit "/>
+			<item value="velan10 &lt;velandg10@gmail.com&gt;"/>
+			<item value="ea35073a6a40e30f33aacc0dc6754463fa8968d3"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+	</section>
+</section>

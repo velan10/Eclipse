@@ -1,0 +1,36 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Web {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Admin\\eclipse-workspace\\Selenium_Onlne\\Driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver(); // upcasting method
+		driver.manage().window().maximize();
+//WebDriver Methods :
+	
+		/*		driver.get("https://www.facebook.com/");
+		String title = driver.getTitle();
+		System.out.println(title);
+		String currentUrl = driver.getCurrentUrl();
+		System.out.println(currentUrl);
+		driver.navigate().to("https://www.youtube.com/");
+		driver.navigate().back();
+		driver.navigate().forward();
+		driver.navigate().refresh();
+		driver.get("https://www.facebook.com/");// mehod overloading
+		Thread.sleep(3000);
+*/
+		//WebElements Methods:
+		
+		driver.get("htps://www.facebook.com/");
+		WebElement name = driver.findElement(By.xpath("//input[@type='text']"));
+		name.sendKeys("velanvelli@gmail.com");
+boolean tr = name.isDisplayed();
+	System.out.println(tr);
+	}
+}

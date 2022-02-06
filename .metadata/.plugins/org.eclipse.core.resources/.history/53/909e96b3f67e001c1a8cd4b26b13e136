@@ -1,0 +1,16 @@
+package com.abstraction;
+
+public class Customer_Details extends Bank_Details {
+
+	@Override
+	public void atmpin() {
+System.out.println(1236);		
+	}
+
+	@Override
+	public void bankname() {
+		System.out.println("Kotak Mahindra Bank");
+	}
+
+	
+}
